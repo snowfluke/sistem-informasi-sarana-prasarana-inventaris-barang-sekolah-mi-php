@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^sarpras\-mi\-nurjalin\.aplikasiweb\.cloud$
+RewriteRule ^/?$ "https\:\/\/sarpras\-mi\-nurjalin\.aplikasiweb\.cloud\/" [R=301,L]
+
